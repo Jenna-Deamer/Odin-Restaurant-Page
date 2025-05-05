@@ -1,0 +1,109 @@
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/*Inherit fonts for form controls*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*Font Styles*/
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/*Restaurant HOME*/
+header {
+    max-height: 68px;
+    padding: 1em;
+    background-color: #161616;
+  
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+nav button {
+    min-width: 100px;
+    padding: 4px 0;
+    border: unset;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #410B13;
+    color: #fff;
+    border-radius: 4px;
+  
+
+}
+
+nav button:hover {}
+
+.active {}
+
+#content {
+    height: calc(100% - 68px);
+    background-image: url('./images/des-recits-NaKwyyh849o-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-banner {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 2px #000000;
+    background-color: rgb(0, 0, 0, .2);
+}
