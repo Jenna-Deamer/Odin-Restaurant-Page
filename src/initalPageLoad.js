@@ -1,7 +1,7 @@
 const initialPageLoad = (() => {
  // Home Content
  content.classList.add("background-image");
-
+ 
  const homeBanner = document.createElement('div');
  const homeHeading = document.createElement('h1');
  const homeSubHeading = document.createElement('h2');

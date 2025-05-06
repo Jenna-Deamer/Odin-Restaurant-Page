@@ -29,6 +29,7 @@ const menuPage = () => {
     clearPage();
     // remove bg img class
     content.classList.remove("background-image");
+    
     const menuHeading = document.createElement('h1');
     menuHeading.textContent = "Our Menu";
     content.appendChild(menuHeading);
@@ -44,7 +45,7 @@ const menuPage = () => {
 
         const menuContent = `<div class='menu-card'>
         <div class="menu-card-title"> <h3>${menuArray[i].title}</h3>
-          <p>${menuArray[i].price}</p></div>
+          <p>$${menuArray[i].price}</p></div>
      
       <img src=${menuArray[i].img}>
       <div class="menu-card-body">
