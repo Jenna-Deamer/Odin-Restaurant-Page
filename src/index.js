@@ -1,17 +1,21 @@
 import "./styles.css"
-const content = document.querySelector("#content");
+import {initialPageLoad} from "./initalPageLoad";
+import { homePage } from "./home";
+import { aboutPage } from "./about";
+import { menuPage } from "./menu";
 
-// Home Content
-const homeBanner = document.createElement('div');
-const homeHeading = document.createElement('h1');
-const homeSubHeading = document.createElement('h2');
+const content = document.querySelector('#content');
 
-homeBanner.id = 'home-banner';
-homeHeading.textContent = 'Some Restaurant Name';
-homeSubHeading.textContent = 'Some Super Awesome Restaurant Slogan!';
+export const clearPage = () =>{
+        // reset content to avoid duplicating content
+        content.textContent = "";
+}
 
-content.appendChild(homeBanner);
-homeBanner.appendChild(homeHeading);
-homeBanner.append(homeSubHeading);
+const homeButton = document.querySelector('#homeBtn').addEventListener('click', homePage)
+const menuButton = document.querySelector('#menuBtn').addEventListener('click', menuPage)
+const aboutButton = document.querySelector('#aboutBtn').addEventListener('click', aboutPage)
+
+
+
 
 

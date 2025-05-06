@@ -50,17 +50,19 @@ h6 {
 /*Font Styles*/
 h1 {
     font-size: 48px;
+    text-align: center;
 }
 
 h2 {
     font-size: 32px;
+    text-align: center;
 }
 
 /*Restaurant HOME*/
 header {
-    max-height: 68px;
     padding: 1em;
     background-color: #161616;
+    max-height: 68px;
   
 }
 
@@ -93,17 +95,20 @@ nav button:hover {
     background-color: #BA1F33;
 }
 
-#content {
-    height: calc(100% - 68px);
+.container {
+    height: 100%;
+}
+
+.background-image{
     background-image: url('./images/des-recits-NaKwyyh849o-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+    height: calc(100vh - 68px);
 }
 
 #home-banner {
     height: 100%;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,4 +116,28 @@ nav button:hover {
     color: #fff;
     text-shadow: 1px 2px #000000;
     background-color: rgb(0, 0, 0, .2);
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1em;
+    margin: 2em 4em;
+   
+}
+
+.menu-card{
+   background-color: #421820;
+   color: #fff;
+}
+.menu-card-title{
+
+}
+.menu-card-body{
+
+}
+.menu-card img{
+    width: 100%;
+    height: 300px;
+    
 }
