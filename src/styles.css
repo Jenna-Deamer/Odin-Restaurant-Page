@@ -152,3 +152,8 @@ nav button:hover {
     height: 300px;
     
 }
+
+/*ABOUT*/
+.about-container{
+    padding: 1em 8em;
+}

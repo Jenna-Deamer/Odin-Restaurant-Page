@@ -34,11 +34,11 @@ const menuPage = () => {
     menuHeading.textContent = "Our Menu";
     content.appendChild(menuHeading);
 
-    const menu = document.createElement('div');
-    menu.classList.add('menu-grid');
-    content.appendChild(menu);
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-grid');
+    content.appendChild(menuContainer);
 
-    menu.textContent = '';
+    menuContainer.textContent = '';
     for (let i = 0; i < menuArray.length; i++) {
         const menuCard = document.createElement('div');
         menuCard.classList.add('menu-card');
@@ -55,7 +55,7 @@ const menuPage = () => {
   
       </div>`
 
-        menu.innerHTML += menuContent;
+      menuContainer.innerHTML += menuContent;
     }
 
 };
