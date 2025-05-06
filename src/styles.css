@@ -80,13 +80,18 @@ nav button {
     background-color: #410B13;
     color: #fff;
     border-radius: 4px;
+    transition: .5s ease-in-out;
   
 
 }
 
-nav button:hover {}
+nav button:hover {
+    background-color: #91171f;
+}
 
-.active {}
+.active {
+    background-color: #BA1F33;
+}
 
 #content {
     height: calc(100% - 68px);
